@@ -9,47 +9,26 @@
 </head>
 
 <body>
-  <h1>बहुत बढ़िया</h1>
-  <button onclick="store()">Store Drills</button>
+  <h1>Welcome to Basketball Drill Creator</h1>
+  <!-- TODO: reorder buttons to make more sense -->
+  <button onclick="storeSchedule()">Store Schedule</button>
+  <button onclick="storeDrills()">Store Drills</button>
   <button onclick="clear_drill()">Clear Drills</button>
-  <table>
+  <button onclick="addRow()">Add a drill</button>
+  <button onclick="genSch()">Generate drill schedule</button>
+  <button onclick="loadSch()">Load a saved drill schedule</button>
+
+  <table id="schedule">
+  </table>
+
+  <table id="allDrills">
     <tr>
       <th>Drill</th>
       <th>Description</th>
-    </tr>
-    <tr>
-      <td id="drill0"></td>
-      <td id="description0"></td>
-    </tr>
-    <tr>
-      <td id="drill1"></td>
-      <td id="description1"></td>
-    </tr>
-    <tr>
-      <td id="drill2"></td>
-      <td id="description2"></td>
-    </tr>
-    <tr>
-      <td id="drill3"></td>
-      <td id="description3"></td>
-    </tr>
-    <tr>
-      <td id="drill4"></td>
-      <td id="description4"></td>
-    </tr>
-    <tr>
-      <td id="drill5"></td>
-      <td id="description5"></td>
-    </tr>
-    <tr>
-      <td id="drill6"></td>
-      <td id="description6"></td>
-    </tr>
-    <tr>
-      <td id="drill7"></td>
-      <td id="description7"></td>
+      <th>Delete</th>
     </tr>
   </table>
+
 </body>
 <script src="index.js"></script>
 
