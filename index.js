@@ -35,13 +35,15 @@ try { // try to retrieve the stored data
 
     let newRow = table.insertRow(1)
 
-    newRow.insertCell(0).innerText = saved_drills[i][0]
-    newRow.insertCell(1).innerText = saved_desc[i][0]
+    newRow.insertCell(0).innerText = saved_drills[i]
+    newRow.insertCell(1).innerText = saved_desc[i]
     newRow.insertCell(2).innerHTML = `<input type="button" value="click to delete row" onclick="deleteRow(this)"></input>`
     
-    drills.push(saved_drills[i][0])
+    drills.push(saved_drills[i])
+    newDrills.push(saved_drills[i])
+    newDescriptions.push(saved_drills[i])
     console.log(drills)
-    descriptions.push(saved_drills[i][0])
+    descriptions.push(saved_desc[i])
   }
 } catch (TypeError) { // if nothing is stored then js will throw a TypeError, catch it and print out a log s statement
   console.log('notin stored')
